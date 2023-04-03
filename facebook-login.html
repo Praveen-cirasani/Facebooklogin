@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-log in or sign up</title>
+    <link rel="icon" href="./images/facebook icon.png">
+    <style>
+        body
+        {
+            background-color: whitesmoke;
+        }
+        .main
+        {
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+        img
+        {
+            margin-top: 116px;
+            height: 106px;
+            margin-left: -29px;
+        }
+        .font-fb
+        {
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            font-size: 28px;
+            font-weight: normal;
+            line-height: 32px;
+            width: 500px;
+            margin-top: -16px;
+        }
+        .border
+        {
+            height: 456px;
+            width: 396px;
+            padding: 0px 20px 0px 0px;
+        }
+        .log-form
+        {
+            border: 0px solid;
+            border-radius: 8px;
+            background-color: white;
+            align-items: center;
+            padding: 0px 15px 0px 20px;
+            margin: 70px 0px;
+            box-shadow: 3px 3px 3px gray;
+        }
+        .email
+        {
+            font-size: 16px;
+            width: 348px;
+            padding: 6px 0px;
+            border-radius: 6px;
+            border:1px solid #dddfe2;
+            color: #1d2129;
+            height: 30px;
+        }
+        .pswd
+        {
+            font-size: 16px;
+            width: 348px;
+            margin-top: -20px;
+            padding: 6px 0px;
+            border-radius: 6px;
+            border:1px solid #dddfe2;
+            color: #1d2129;
+            height: 30px;  
+        }
+        .input-field
+        {
+            padding: 20px 0px 28px 0px;
+        }
+        a
+        {
+            text-decoration: none;
+        }
+        .log-in
+        {
+            border: 0px solid;
+            border-radius: 8px;
+            background-color: #1877f2;
+            text-align: center;
+            margin: 20px;
+            color: white;
+            font-size: 20px;
+            padding: 0px 16px;
+            width: 348px;
+            height: 40px;
+            margin-left: -1px;
+        }
+        .crn-btn 
+        {
+          border: 0px solid;
+          border-radius: 6px;
+          font-size: 16px;
+          line-height: 40px;
+          padding: 0px 16px;
+          margin-bottom: 20px;
+          background-color: #42b72a;
+          
+        }
+        .crn-btn a
+        {
+            color: white;  
+        }
+        .fgp
+        {
+            color: #1877f2;
+            margin-top: -25px;
+        }
+        .fgp-crn
+        {
+            padding-top: 16px;
+            display: flex;
+            justify-content: center;
+        }
+        .cap
+        {
+            display: flex;
+            justify-content: center;
+            margin-top: -48px;
+        }
+        .cr-pg
+        {
+            font-weight: 600;
+            font-size: 16px;
+            color: #1c1e21;
+        }
+        /* span
+        {
+            margin-top: -100px;
+        } */
+        
+        
+
+    </style>
+</head>
+<body>
+   <div class="main">
+        <div>
+            <div>
+                <img src="./images/facebook-logo.svg" alt="">
+            </div>
+            <div class="font-fb">
+                Facebook helps you connect and share
+                with the people in your life.
+            </div>
+        </div>
+
+        <div class="border">
+            <div>
+                <div class="log-form">
+                    <form action="" onsubmit="return validation()">
+                        <div class="input-field">
+                            <input type="text" placeholder="Email address or phone number" class="email" name="email">
+                        </div>
+                        <span class="error-msz"></span>
+
+                        <br><br>
+                        
+                        <div>
+                            <input type="password" placeholder="Password" class="pswd" name="password">
+                        </div>
+                        <span class="error-msz"></span>
+
+                        <br><br>
+                        <div>
+                            <input type="submit" value="Log In" class="log-in">
+                        </div>
+                    </form>
+                    <div class="fgp-crn">
+                        <a href="" class="fgp">Forgotten password?</a>
+                    </div>
+                    <hr>
+                    <div class="fgp-crn">
+                        <button class="crn-btn">
+                            <a href="./facebookc.acc.html">Create New account</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cap">
+                <a href="" class="cr-pg">
+                    Create a Page 
+                </a>
+                for a celebrity,brand or business.
+            </div>
+        </div>
+   </div>
+
+   <script src="./facebook-login.js"></script>
+</body>
+</html>
